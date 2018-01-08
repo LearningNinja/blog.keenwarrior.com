@@ -6,7 +6,7 @@ headline:
 modified: 2017-06-30 16:38:46 +0530
 category: [Open Source, Experiences]
 tags: [open source, experience, sarcasm]
-imagefeature: posts/tech-conferences/resources.png
+imagefeature: posts/opensource/resources.png
 mathjax:
 chart:
 comments: true
