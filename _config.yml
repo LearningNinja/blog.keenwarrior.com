@@ -1,0 +1,145 @@
+title:            //TODO
+description:      code the blog, blog the code
+logo:             logo.png
+disqus_shortname: keenwarrior
+share:            true
+dropcap:		  true
+
+# Change url to your domain. Leave localhost server or blank when working locally.
+# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same
+# whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
+url:        	  https://blog.keenwarrior.com
+
+wpm:            200
+
+# Owner/author information
+owner:
+  name:           Anuj Garg
+  avatar:         championswimmer.jpeg
+  email:          anujgargcse@gmail.com
+  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
+  description:    Coder, Poet, Engineer, Entrepreneur
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        keenwarrior
+  facebook:       keenwarrior
+  github:         keenwarrior
+  instagram:      keenwarrior
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   UA-112009822-1
+
+google_verify: XmKC8Mmtn13Z0PmhVYH0dPGAhWhQmtW4B-hsnHU9ONw
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in footer navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+    external: false
+    icon: home
+  - title: Featured Posts
+    url: /featured
+  - title: Categories
+    url: /categories
+  - title: About
+    url: /about
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Asia/Kolkata
+future:      true
+paginate:    5
+paginate_path: "page:num"
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:year/:month/:title
+
+# Conversion
+# markdown: redcarpet
+# highlighter: pygments
+# redcarpet:
+#   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
+highlight_theme: light
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://localhost:4000/'
+  relativeLinks: 'https://blog.keenwarrior.com/links.jsonp'
+  media: 'images'
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
+      - name: "layout"
+        field:
+          element: "hidden"
+          label: "Layout"
+          value: "post"
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
+          value: "An Awesome Headline!"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          placeholder: "Enter Post Description"
+      - name: "headline"
+        field:
+          element: "text"
+          label: "beadline"
+          placeholder: "Enter Post Headline"
+      - name: "modified"
+        field:
+          element: "text"
+          label: "Has this page been modified?"
+          placeholder: "YYYY-MM-DD"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add categories"
+          placeholder: "Choose categories"
+          value: personal
+          options:
+            - name: "Personal"
+              value: personal
+            - name: "Engineering"
+              value: engineering
+            - name: "Coding"
+              value: coding
+          alterable: true
+      - name: "tags"
+        field:
+          element: "text"
+          label: "Tags"
+          placeholder: "Enter tags, separated by spaces"
+      - name: "imagefeature"
+        field:
+          element: "text"
+          label: "Featured Image"
+          placeholder: "somefile.jpg"
+      - name: "mathjax"
+        field:
+          element: "checkbox"
+          label: "MathJax"
+          value: false
+      - name: "featured"
+        field:
+          element: "checkbox"
+          label: "Featured?"
+          value: false
+      - name: "comments"
+        field:
+          element: "checkbox"
+          label: "Comments"
+          value: false
+
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
